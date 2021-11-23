@@ -1,0 +1,116 @@
+/* select, input box 높이 */
+.v-text-field:not(.textDesc) fieldset, .v-text-field:not(.textDesc) .v-input__slot{
+  height:36px;
+  margin-top: 2px;
+}
+.v-text-field .v-input__control .v-text-field__details{
+  min-height:14px !important;
+  margin-bottom: 0;
+}
+.v-text-field:not(.textDesc).v-text-field.v-text-field--enclosed:not(.v-text-field--rounded) > .v-input__control > .v-input__slot, .v-text-field.v-text-field--enclosed .v-text-field__details{
+  min-height: 36px;
+}
+.v-text-field:not(.textDesc).v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner{
+  margin-top:2px;
+}
+
+/* 모든 테이블,카드 팝업에 테두리설정 */
+.v-data-table, .v-sheet.v-card{
+  border:1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+}
+.v-dialog, .v-dialog > .v-card{
+  border:0;
+}
+
+/* app bar 그림자 진하기 설정 */
+.v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined){
+  -webkit-box-shadow:
+  0px 2px 2px -1px rgba(0, 0, 0, 0.1), 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
+  box-shadow:
+  0px 2px 2px -1px rgba(0, 0, 0, 0.1), 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 컨텐츠 폰트사이즈 설정 */
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td, .v-data-table > .v-data-table__wrapper > table > thead > tr > td, .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td{
+  font-size:0.75rem !important;
+}
+
+/* pagination */
+.v-pagination__item{
+  font-size:0.75rem;
+  box-shadow: none;
+}
+
+.v-pagination__navigation{
+  box-shadow: none;
+}
+
+.theme--light.v-pagination .v-pagination__item--active{
+  font-weight: bold;
+  color:#1976d2 !important;
+  background-color:#fff !important;
+}
+
+.v-chip.theme--light {
+  overflow: unset !important;
+}
+
+/* input 텍스트 사이즈조정 */
+.v-input >>> .v-label {
+  font-size:0.75rem !important;
+}
+.v-icon.v-icon {
+  font-size:18px;
+}
+
+/* 리사이징 테이블 */
+.resizable-table tbody tr td {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 40px;
+  max-width: 60px;
+}
+.resizable-table thead tr th:not(:last-child) {
+  /* border-right: 3px double rgba(20, 80, 120, 0.1); */
+  border-right: 1px solid rgba(20, 80, 120, 0.1);
+}
+
+/* 기본 스크롤 UI 숨기기 */
+.hidden-scroll ::-webkit-scrollbar {
+  width: 0px;  /* 세로축 스크롤바 길이 */
+  height: 0px;  /* 가로축 스크롤바 길이 */
+}
+.hidden-scroll ::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+.hidden-scroll ::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+.hidden-scroll ::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0);
+  width: 0px;
+  height: 0px;
+}
+.hidden-scroll ::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0); /* 우측 하단의 코너 부분 */
+}
+.hidden-scroll ::-webkit-resizer {
+  background-color: rgba(0, 0, 0, 0);
+}
+.hidden-scroll ::-webkit-scrollbar {
+  width: 0px;
+}
+.hidden-scroll ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.hidden-scroll ::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.hidden-scroll ::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
