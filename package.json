@@ -2,7 +2,7 @@
   "name": "invitation",
   "version": "1.0.0",
   "private": true,
-  "description": "Mobile invation project",
+  "description": "Mobile invitation project",
   "author": "dclee",
   "scripts": {
     "build": "vue-cli-service build",
