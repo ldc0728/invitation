@@ -1,9 +1,14 @@
 <template>
   <v-app>
-    <Header/>
+    <Header
+      @setPage="setPage"
+    >
+    </Header>
 
     <v-main>
-      <router-view/>
+      <router-view
+        :currentPage="currentPage"
+      />
     </v-main>
 
   </v-app>
@@ -11,7 +16,6 @@
 
 <script>
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
@@ -19,13 +23,15 @@ export default {
   mounted() {},
   beforeDestroy() {},
   components: {
-    Header,
-    Footer
+    Header
   },
-  data: function () {
-    return {
-      
+  methods: {
+    setPage(page) {
+      this.currentPage = page;
     }
-  }
+  },
+  data: () => ({
+    currentPage: "Intro"
+  }),
 }
 </script>
